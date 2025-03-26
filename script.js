@@ -3,7 +3,7 @@ import * as THREE from 'three';
 
 // --- Configuration ---
 const GRID_SIZE = 1;
-const PLANE_SIZE = 100;
+const PLANE_SIZE = 50;
 const SNAKE_SPEED = 8;
 const INITIAL_SNAKE_LENGTH = 3;
 const BASE_SNAKE_SIZE_MULTIPLIER = 0.8;
