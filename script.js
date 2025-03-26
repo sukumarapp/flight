@@ -57,10 +57,10 @@ const musicStatus = document.getElementById('musicStatus');
 // --- Audio Elements --- <<< NEW >>>
 const bgMusic = new Audio('background.mp3'); // Replace with your music file path
 bgMusic.loop = true;
-bgMusic.volume = 0.4; // Adjust volume (0.0 to 1.0)
+bgMusic.volume = 0.2; // Adjust volume (0.0 to 1.0)
 
 const eatSound = new Audio('eat.wav'); // Replace with your eat sound file path
-eatSound.volume = 0.7; // Adjust volume
+eatSound.volume = 1.0; // Adjust volume
 
 // --- Initialization ---
 function init() {
