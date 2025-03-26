@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Hide scrollbars */
+    background-color: #222;
+    color: white;
+    font-family: sans-serif;
+}
+
+#gameCanvas {
+    display: block; /* Remove extra space below canvas */
+}
+
+#info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#instructions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    text-align: center;
+    color: red;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.hidden {
+    display: none;
+}
