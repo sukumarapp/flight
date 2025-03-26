@@ -3,43 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Plane Game - Three.js</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Three.js Airplane Game</title>
+    <style>
+        body { margin: 0; overflow: hidden; background-color: #87CEEB; }
+        canvas { display: block; }
+        #info {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            z-index: 100; /* Ensure info is above the canvas */
+        }
+    </style>
 </head>
 <body>
-    <!-- Container for the game canvas -->
-    <div id="game-container"></div>
-
-    <!-- UI Elements -->
-    <div id="ui">
-        <div id="score">Score: 0</div>
+    <div id="info">
+        Controls: [W/S] Pitch | [A/D] Roll | [Up/Down Arrow] Thrust | [Space] Fire
     </div>
-
-    <!-- Game Over Overlay -->
-    <div id="game-over" class="overlay hidden">
-        <h1>Game Over!</h1>
-        <div id="final-score">Final Score: 0</div>
-        <button id="restart-button">Restart</button>
-    </div>
-
-    <!-- Start Screen Overlay -->
-     <div id="start-screen" class="overlay">
-        <h1>3D Plane Shooter</h1>
-        <p>Arrow Keys: Move</p>
-        <p>Spacebar: Fire</p>
-        <button id="start-button">Start Game</button>
-    </div>
-
-    <!-- Import Three.js (use a CDN for simplicity) -->
     <script type="importmap">
         {
             "imports": {
-                "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
             }
         }
     </script>
-
-    <!-- Your game script -->
     <script type="module" src="game.js"></script>
 </body>
 </html>
