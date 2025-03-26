@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Make it mobile-friendly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>3D Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="info">
+        Score: <span id="score">0</span>
+    </div>
+
+    <!-- Add Audio Controls -->
+    <div id="audio-controls">
+        <button id="playMusicBtn">Play Music</button>
+        <button id="pauseMusicBtn">Pause Music</button>
+        <span id="musicStatus"></span> <!-- Optional status indicator -->
+    </div>
+
+    <div id="instructions">
+        Tap Left/Right side to Turn.<br>
+        Or Use Arrow Keys.<br>
+        Press SPACE or Tap Screen to Start/Restart. <!-- Updated instructions -->
+    </div>
+    <div id="game-over" class="hidden">
+        GAME OVER!<br>
+        Final Score: <span id="final-score">0</span><br>
+        Press SPACE or Tap Screen to Restart <!-- Updated instructions -->
+    </div>
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Import three.js -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js"
+            }
+        }
+    </script>
+    <!-- Your game script (type="module" is important) -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
